@@ -13,7 +13,7 @@ if (len(single_ch) != 1):
     print("Error: Character must be a single character")
     exit()
 
-print("Searching for "+ single_ch + " in " + five_word)
+print("Searching for " + single_ch + " in " + five_word)
 
 if (single_ch == five_word[0]):
     print(single_ch + " found at index 0")
@@ -35,4 +35,11 @@ if (single_ch == five_word[4]):
     print(single_ch + " found at index 4")
     count = count + 1
 
-print(str(count) + " instances of " + single_ch + " found in " + five_word)
+if (count == 0):
+    print("No instances of " + single_ch + " found in " + five_word)
+
+if (count == 1):
+    print("1 instance of " + single_ch + " found in " + five_word)
+
+if (count > 1):    
+    print(str(count) + " instances of " + single_ch + " found in " + five_word)
